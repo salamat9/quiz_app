@@ -1,0 +1,17 @@
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+{#    {{ quiz_form }}#}
+    <h1>WTF a u doing here? mother father!</h1>
+    {{ quiz_form.as_p }}
+    <button type="submit">Submit</button>
+    {% if result and username %}
+        <h2>{{ username }} your result is: {{ result }}</h2>
+    {% endif %}
+{#    <button type="submit">Submit</button>#}
+</form>
+
+{#<form action="" method="post">#}
+{#    {% csrf_token %}#}
+{#    #}
+{#</form>#}
